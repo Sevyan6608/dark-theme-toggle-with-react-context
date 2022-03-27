@@ -6,7 +6,9 @@ function App() {
 			<div className='absolute right-0 top-0 mr-4 mt-4 md:mr-6 md:mt-6'>
 				<Toggle />
 			</div>
-			<h1 className='dark:text-white'>Hello world</h1>
+			<h1 className='transition-colors duration-300 dark:text-white'>
+				Hello world
+			</h1>
 		</>
 	)
 }

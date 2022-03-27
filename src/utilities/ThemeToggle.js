@@ -16,15 +16,15 @@ const Toggle = () => {
 		<div className='rounded-full p-2 transition duration-500 ease-in-out'>
 			<Switch.Group>
 				<div className='flex items-center'>
-					<Switch.Label className='mr-4 dark:text-white'>
+					<Switch.Label className='mr-4 transition-colors duration-300 dark:text-white'>
 						Toggle dark mode
 					</Switch.Label>
 					<Switch
 						checked={enabled}
 						onChange={setChangedTheme}
 						className={`${
-							enabled ? 'bg-blue-600' : 'bg-gray-200'
-						} relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`}
+							enabled ? 'bg-[#4d4d4d]' : 'bg-gray-200'
+						} relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none  `}
 					>
 						<span
 							className={`${
