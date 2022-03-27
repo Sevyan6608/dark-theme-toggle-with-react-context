@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import Toggle from './utilities/ThemeToggle'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<div className='absolute right-0 top-0 mr-4 mt-4 md:mr-6 md:mt-6'>
+				<Toggle />
+			</div>
+			<h1 className='dark:text-white'>Hello world</h1>
+		</>
+	)
 }
 
-export default App;
+export default App
